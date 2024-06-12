@@ -362,12 +362,6 @@
 
       subscribeToROSTopic(ros, "/fix", "sensor_msgs/NavSatFix");
       subscribeToROSTopic(ros, "/hex", "sensor_msgs/NavSatFix");
-      circle = L.circle([0, 0], {
-            color: "red",
-            fillColor: "#f03",
-            fillOpacity: 0.5,
-            radius: 1,
-          }).addTo(map);
       subscribeToROSTopic(ros, "/yaw", "std_msgs/Float32");
 
       console.log("done");
